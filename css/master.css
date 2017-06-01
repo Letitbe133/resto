@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Style titre principal et secondaire */
+h1, .contenu h5 {
+  font-family: 'Sevillana', cursive;
+}
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Style main */
+main {
+  padding-top: 4rem;
+  height: 80%;
+  background-image: url('../img/bg_naturo.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style photo profil */
+.profil {
+  height: 10rem;
+  width: 10rem;
+  margin: 0 auto;
+  border: 8px solid white;
+  border-radius: 50%;
+}
+
+/* Style réseaux sociaux */
+.socials {
+
+}
+
+.social-icon {
+
+}
+
+/* Style sections infos */
+.infos {
+  margin-bottom: 0;
+  height: 20%;
+}
+
+.sections, .illustration {
+  padding: 0!important;
+  height: 100%;
+}
+
+.sections:first-child {
+  border-right: 1px solid white;
+}
+
+/* Style div contenu */
+.contenu {
+  padding: 0!important;
+  height: 100%;
+}
+
+/* Style div illustrations */
+.infos .sections:first-child .illustration {
+  background: lightgrey url('../img/bedroom.jpeg') center;
+  background-size: cover;
+}
+
+.infos .sections:last-child .illustration {
+  background: lightgrey url('../img/flowers.jpeg') center;
+  background-size: cover;
+}
+
+@media all and (min-width: 1200px) {
+  main {
+    height: 70%;
+  }
+
+  h1 {
+    margin-top: 3rem;
+    font-size: 5rem;
+  }
+
+  .infos {
+    height: 30%;
+  }
+
+  .illustration {
+    position: relative;
+    overflow-y: hidden;
+  }
+
+  .bg:hover {
+    cursor: help;
+    opacity: 1;
+  }
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.4s all ease;
+  }
+
+}
